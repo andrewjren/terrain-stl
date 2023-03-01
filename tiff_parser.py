@@ -19,7 +19,7 @@ def sample_geotiff(lat, lon):
     # determine relevant database
     # example GeoTIFF is: USGS_13_n22w158_20130911.tiff
     dataset_type = 'USGS_13'
-    dataset_date = '20130911'
+    dataset_date = '20220919'
 
     # dataset is referenced to "northwest corner"
     if lat >= 0: # northern hemisphere
@@ -78,10 +78,10 @@ def approx_scale(lon1, lon2, num_samples):
 # define northwest, southeast corners of terrain map
 # assume square print - choose a square for lat/lon corners
 # for now to avoid complicated earth geometry problems - assume a flat earth
-lat1 = 21.742715
-lon1 = -158.317821
-lat2 = 21.193067
-lon2 = -157.609522
+lat1 = 46.960788
+lon1 = -121.916461
+lat2 = 46.735284
+lon2 = -121.578849
 
 # choose number of samples in lat and lon
 openscad_length = 100 # mm
